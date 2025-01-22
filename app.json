@@ -4,8 +4,8 @@
     "slug": "tutorin",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
+    "icon": "./src/assets/images/orange_logo.png",
+    "scheme": "tutorin",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
@@ -15,7 +15,12 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "softwareKeyboardLayoutMode": "pan"  
+    },
+    "androidStatusBar": {
+      "barStyle": "dark-content",
+      "translucent": false
     },
     "web": {
       "bundler": "metro",
@@ -29,8 +34,13 @@
         {
           "image": "./assets/images/splash-icon.png",
           "imageWidth": 200,
-          "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
+          "resizeMode": "contain"
+        }
+      ],
+      [
+        "expo-font",
+        {
+          "fonts": ["./src/assets/fonts/Poppins-Regular.ttf"]
         }
       ]
     ],
